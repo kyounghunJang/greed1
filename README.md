@@ -1,9 +1,7 @@
 # greed1
 
-
 # 공포도 문제 
-
-n=int(input())
+n=int(nput())
 data= list(map(int,input().split()))
 data.sort()
 result=0
