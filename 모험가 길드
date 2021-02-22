@@ -1,0 +1,18 @@
+#공포도 문제 n명의 사람이 그룹을 결성해서 모험을떠난다 
+#공포도가 x인 사람은 반드시 x명이상이여야 여행을떠난다
+#여행을 떠날 수 있는 최대 그룹을 구하여라 
+
+n=int(input())
+data= list(map(int,input().split()))
+data.sort()
+result=0
+count=0
+print(data)
+for i in data:
+    count+=1
+    if count>=i:
+        result+=1
+        count=0
+
+print(result)
+        
